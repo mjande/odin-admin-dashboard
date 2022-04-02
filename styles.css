@@ -6,7 +6,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: minmax(10%, 20%) 1fr;
+    grid-template-columns: 20% 1fr;
     grid-template-rows: minmax(15%, 20%) 1fr;
     height: 100vh;
     width: 100vw;
@@ -17,7 +17,7 @@ body {
     background-color: rgb(128, 219, 250);
     border: 1px solid grey;
     display: grid;
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(3, fit-content);
     align-content: start;
     gap: 24px;
 }
@@ -42,12 +42,29 @@ body {
 .header {
     grid-column: 2 / 3; 
     display: grid;
-    grid-template-rows: 100px 100px;
+    grid-template-rows: auto auto;
 }
 
 .search-and-nav {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
+    margin: 12px;
+}
+
+.search-bar {
+    display: grid;
+    justify-content: start;
+    grid-template-columns: auto 1fr;
+    margin-right: 5rem;
+    gap: 12px;
+    height: 1.5rem;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 12px;
 }
 
 .main-content {
