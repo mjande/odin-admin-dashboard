@@ -52,7 +52,9 @@ body {
     display: grid;
     grid-template-columns: 2fr 1fr;
     justify-content: space-between;
-    margin: 12px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
 }
 
 .search-bar {
@@ -62,6 +64,7 @@ body {
     margin-right: 5rem;
     gap: 12px;
     height: 1.5rem;
+    align-self: center;
 }
 
 .nav {
@@ -87,6 +90,7 @@ body {
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     align-content: center;
+    margin: 0;
 }
 
 .profile {
@@ -96,9 +100,22 @@ body {
     margin: 12px;
 }
 
+.profile {
+    justify-self: start;
+}
+
+.profile-and-post {
+    margin-left: 1rem;
+}
+
+.profile-and-post img{
+    align-self: center;
+}
+
 .post {
     display: grid;
     justify-self: end;
+    align-self: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     grid-template-rows: 2rem;
@@ -111,6 +128,7 @@ body {
     background-color: #dcdde5;
     display: grid;
     grid-template-columns: 2fr minmax(20%, 1fr);
+    overflow: auto;
 }
 
 .project-cards {
@@ -118,7 +136,7 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 2rem;
-    margin: 2rem;
+    margin: 1rem 2rem;
     height: 70vh;
 }
 
@@ -134,6 +152,7 @@ body {
     padding: 0.5rem;
     display: grid;
     grid-template-rows: fit-content 1fr fit-content;
+    font-size: 14px;
 }
 
 .card-icons {
@@ -148,7 +167,8 @@ body {
     margin: 0 0.5rem;
 }
 
-.header img {
+.header img,
+.profile img {
     height: 2rem;
     width: auto;
 }
@@ -159,4 +179,26 @@ body {
 
 h3 {
     font-style: bold;
+}
+
+.announcements {
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+    margin-right: 2rem;
+    padding: 1rem;
+    font-size: 12px;
+}
+
+h4 {
+    margin: 0.5rem;
+}
+
+.trending-profiles {
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+    margin-right: 2rem;
+    padding: 1rem;
+    font-size: 12px;
 }
